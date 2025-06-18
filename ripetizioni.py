@@ -6,7 +6,7 @@ import os
 
 # create executable with pyinstaller ripetizioni.py --onefile --windowed
 
-FILE = r'C:\Users\edebi\Documents\programs\lavoro\ripetizioni.json'
+FILE = r'ripetizioni.json'
 
 # Creiamo una finestra con customtkinter
 class TableApp(ctk.CTk):
@@ -29,7 +29,7 @@ class TableApp(ctk.CTk):
             header_label.grid(row=0, column=c+1, padx=2, pady=5)
 
         # Nomi per la prima colonna
-        self.names = ["Alice", "Viola", "Mariangela", "Pietro", "Nicolò", "Paulo", "Carolina", "Totale"]
+        self.names = ["Name1", "Name2", "Name3", "Name4", "Name5", "Totale"]
 
         # Numero di righe e colonne
         self.rows = len(self.names)  # Ultima riga è per il totale
